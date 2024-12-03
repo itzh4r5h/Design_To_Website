@@ -1,0 +1,441 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'DM Sans';
+    color: #050404;
+}
+
+html,
+body,
+main,
+#root,
+#containerOne,
+#containerTwo{
+    width: 100%;
+    height: 100%;
+}
+
+
+#root{
+    background-color: #D5D8DD;
+}
+
+#root::before{
+    background-color: #C24D39;
+}
+
+#root::after{ 
+    background-color: #161616;
+    bottom: -100%;
+}
+
+#root::before,
+#root::after{
+    content: "";
+    position: absolute;
+    z-index: 1;
+    animation-name: initialLoading;
+    animation-duration: 2.4s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    transition: all ease-in-out;
+}
+
+@keyframes initialLoading {
+    from{
+        transform: translateY(100%);
+        width: 100%;
+        height: 100%;
+    }
+    to{
+        transform: translateY(-200%);
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
+main{
+    padding: 2vw;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: onLoadHideContent;  
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    transition: opacity .9s ease-in-out;
+}
+
+@keyframes onLoadHideContent {
+    0%,
+    50%,
+    70%,
+    80%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+#logo #square{
+    width: 1.2vw;
+    height: 1.2vw;
+    background-color: #050404;
+    rotate: 45deg;
+
+}
+
+#containerOne{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 7fr 3fr;
+}
+
+nav{
+    display: grid;
+    grid-template-columns: 1fr 11fr;
+    text-align: end;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+nav h4,
+nav ul{
+    padding-bottom: 3vw;
+}
+
+nav h4{
+    font-weight: normal;
+    font-size: 1.3vw;
+}
+
+nav ul li{
+    list-style: none;
+    font-size: 1.2vw;
+    cursor: pointer;
+    width: fit-content;
+}
+
+nav ul li #menuLine{
+    display: inline-block;
+    width: 1vw;
+    height: .1vw;
+    background-color: #050404;
+    padding-left: .2vw;
+}
+
+nav ul li:nth-child(3){
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+nav #menuBar>div{
+    display: flex;
+    justify-content: end;
+    gap: 6vw;
+}
+
+nav #menuBar>div i{
+    display: none;
+}
+
+header{
+    padding-top: 1vw;
+}
+
+header h1{
+    font-size: 6vw;
+    text-transform: uppercase;
+    font-weight: 400;
+    line-height: 5vw;
+
+}
+
+header h1:nth-child(2){
+   padding-left: 7vw;
+}
+
+header h1:nth-child(4){
+    text-align: end;
+    padding-right: 15vw;
+}
+
+
+header h1 #headingLine{
+    display: inline-block;
+    width: 5vw;
+    height: .4vw;
+    background-color: #050404;
+}
+
+header h1:nth-child(3){
+    display: flex;
+    align-items: center;
+    gap: .5vw;
+}
+
+p{
+    padding-top: 4vw;
+    font-size: 1vw;
+}
+
+nav,
+header,
+p{
+    padding-right: 2vw;
+}
+
+#containerTwo{
+    position: relative;
+}
+
+#containerTwo section{
+    display: flex;
+    padding-left: 1vw;
+    height: 100%;
+    width: 100%;
+    gap: 5vw;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+#containerTwo section video{
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+    object-position: 50% 20%;
+    overflow-clip-margin: content-box;
+}
+
+#containerTwo section i{
+    transform: scaleX(-1);
+    font-size: 1.2vw;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#arrowContainer{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    top: 42%;
+    left: -4%;
+}
+
+#arrow{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #C24D39;
+    padding: 1vw;
+    padding-right: .5vw;
+    padding-left: 1.5vw;
+    border-radius: 50%;
+    height: 6vw;
+    width: 6vw;
+    cursor: pointer;
+}
+
+#arrow img{
+    height: 100%;
+    width: 100%;
+}
+
+
+
+@media (max-width:1281px) and (max-height:801px){
+
+    header{
+        padding-top: 5vw;
+    }
+
+    header h1{
+        font-size: 7.5vw;
+        line-height: 6vw;
+    }
+
+    header h1:nth-child(2){
+        padding-left: 9vw;
+     }
+     
+    header h1:nth-child(4){
+        text-align: end;
+        padding-right: 7vw;
+    }
+     
+    p{
+        font-size: 1.3vw;
+    }
+
+    section i{
+        font-size: 1.5vw;
+    }
+}
+
+@media (max-width:1023px), (max-width:913px),(max-width:1025px) and (min-height:1365px){
+    #root{
+        height: auto;
+        min-height: 100%;
+    }
+
+    main{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 7fr 5fr;
+    }
+
+    #logo #square{
+        width: 2vw;
+        height: 2vw;
+    }
+
+    #containerOne{
+        grid-template-rows: auto;
+    }
+
+
+    nav h4{
+        font-size: 3vw;
+    }
+
+    nav #menuBar>div i{
+        display: initial;
+        padding-top: 1vw;
+        font-size: 2vw;
+        transform: scaleX(-1);
+        font-weight: bold;
+        cursor: pointer;
+    }
+    
+    nav ul li{
+        font-size: 2vw;
+    }
+
+    header{
+        padding-left: 5vw;
+    }
+
+    header h1{
+        font-size: 9vw;
+        line-height: 8vw;
+    }
+
+    header h1:nth-child(2){
+        padding-left: 11vw;
+     }
+
+    header h1:nth-child(4){
+        text-align: start;
+        padding-left: 20vw;
+    }
+
+    p{
+        padding-top: 4vw;
+        padding-left: 5vw;
+        font-size: 2.3vw;
+    }
+
+    #containerTwo{
+        padding-top: 0;
+    }
+
+    #containerTwo section{
+       padding-left: 0;
+    }
+  
+    #containerTwo section video{
+        height: 40vh;
+    }
+
+
+    #containerTwo section i{
+       display: none;
+    }
+
+    #arrowContainer{
+        justify-content: center;
+        top: -4%;
+    }
+    
+
+}
+
+
+@media (max-width:450px){
+    #logo #square{
+        width: 2.5vw;
+        height: 2.5vw;
+        background-color: #050404;
+        rotate: 45deg;
+    
+    }
+
+    nav h4{
+        font-size: 3.5vw;
+    }
+
+    nav ul li{
+        font-size: 2.7vw;
+    }
+
+    nav #menuBar>div i{
+        font-size: 2.7vw;
+    }
+
+    header h1{
+        font-size: 15vw;
+        line-height: 13vw;
+    }
+
+    header h1:nth-child(2){
+        padding-left: 18vw;
+     }
+     
+    header h1:nth-child(4){
+        text-align: end;
+        padding-right: 10vw;
+    }
+
+    header h1 #headingLine{
+        width: 11vw;
+        height: .8vw;
+    }
+
+    p{
+        padding-top: 3vw;
+        font-size: 3vw;
+    }
+
+}
+
+@media (max-width:380px){
+
+    header h1{
+        font-size: 12vw;
+        line-height: 10vw;
+    }
+
+    header h1:nth-child(2){
+        padding-left: 15vw;
+     }
+     
+    header h1:nth-child(4){
+        padding-right: 27vw;
+    }
+
+    p{
+        padding-top: 3vw;
+        font-size: 2.5vw;
+    }
+}
