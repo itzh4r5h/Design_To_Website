@@ -1,0 +1,194 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Flex";
+}
+
+html,
+body,
+main{
+    height: 100%;
+    width: 100%;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: 1fr 5fr 2fr 4fr;
+}
+
+nav{
+    padding: 1.5vw 1vw;
+}
+
+nav ul{
+    display: flex;
+    justify-content: end;
+    gap: 1.2vw;
+}
+
+nav ul li{
+    list-style: none;
+    font-size: 1vw;
+    cursor: pointer;
+}
+
+nav ul li i{
+    font-size: 1vw;
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    padding: .6vw;
+}
+
+header h1{
+    font-size: 5vw;
+    font-weight: 500;
+    padding: 0 5vw;
+    padding-top: .9vw;
+    padding-bottom: 2vw;
+    line-height: 5.1vw;
+}
+
+section{
+    display: flex;
+    justify-content: space-between;
+}
+
+section p{
+    font-size: 1vw;
+    line-height: 2vw;
+    padding-left: 5vw;
+}
+
+section .linkContainer{
+    padding-right: 3vw;
+    width: 22%;
+    padding-top: 2.5vw;
+}
+
+section .linkContainer .link{
+    padding: .7vw;
+    border-top: solid black .1vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+section .link a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.1vw;
+}
+
+section .link i{
+    font-size: 1.5vw;
+    opacity: 0;
+}
+
+section .link:hover i{
+    opacity: 1;
+}
+
+
+figure{
+    background: url("./shop-jacket.png");
+    background-size: cover;
+}
+
+@media (max-width:1023px), (max-width:913px),(max-width:1025px) and (min-height:1365px) {
+    nav{
+        padding: 2vw 1.5vw;
+    }
+
+    nav ul{
+        gap: 2.5vw;
+    }
+    
+
+    nav ul li{
+        font-size: 2.4vw;
+    }
+
+    nav ul li i{
+        font-size: 2.1vw;
+        padding: 1vw;
+    }
+
+    header h1{
+        font-size: 12vw;
+        line-height: 11vw;
+        padding-top: 5vw;
+    }
+
+    section p{
+        font-size: 2.4vw;
+        line-height: 3.4vw;
+    }
+
+    section .linkContainer{
+        padding-right: 5vw;
+        width: 42%;
+        padding-top: 3vw;
+    }
+
+    section .linkContainer .link{
+        padding: 1vw;
+        border-top: solid black .2vw;
+    }
+
+    section .link i{
+        font-size: 3vw;
+        opacity: 1;
+    }
+    
+
+    section .link a{
+        font-size: 3vw;
+    }
+
+    figure{
+        background: url("./shop-jacket.png");
+        background-size: cover;
+        background-position: right;
+    }
+}
+
+@media (max-width:610px) {
+
+    main{
+        display: grid;
+        grid-template-columns: 1;
+        grid-template-rows: 1fr 4fr 3fr 4fr;
+    }
+
+
+    header h1{
+        font-size: 11vw;
+        line-height: 11 vw;
+        padding-top: 5vw;
+    }
+
+    section{
+        flex-direction: column;
+        padding-bottom: 6vw;
+    }
+
+    section p{
+        font-size: 2.5vw;
+        line-height: 4vw;
+    }
+
+    section .linkContainer{
+        padding-top: 4vw;
+        padding-left: 5vw;
+        width: 50%;
+        align-self: end;
+    }
+
+    figure{
+        background: url("./shop-jacket.png");
+        background-size: cover;
+        background-position: right;
+    }
+}
