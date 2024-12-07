@@ -1,0 +1,262 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Flex";
+}
+
+html,
+body,
+main{
+    height: 100%;
+    width: 100%;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 6fr 6fr;
+    padding: 0 7.5vw;
+    padding-top: 9vw;
+}
+
+#left{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 7fr 2fr 3fr;
+    padding-bottom: 1vw;
+}
+
+#left h1{
+    font-size: 8vw;
+    line-height: 7vw;
+    font-weight: 450;
+}
+
+#left #button{
+    margin: 2vw 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    border-radius: 2vw;
+    border: .15vw solid black;
+    padding: .3vw 1vw;
+    gap: .5vw;
+}
+
+#left #button span{
+    margin-right: .6vw;
+    font-size: 1vw;
+}
+
+#left #button .colors{
+    height: 1.2vw;
+    width: 1.2vw;
+    border-radius: 100%;
+}
+
+#left #button .colors:nth-child(2){
+    background-color: #7D6853;
+}
+#left #button .colors:nth-child(3){
+    background-color: #353331;
+}
+
+#left #details h3{
+    font-size: 2vw;
+    margin-bottom: .5vw;
+    font-weight: 500;
+}
+
+#left #details p{
+    line-height: 1.5vw;
+    font-size: 1vw;
+    font-weight: 500;
+}
+
+#right{
+    padding-top: 4vw;
+    padding-right: 12vw;
+    padding-left: 3vw;
+    display: grid;
+    grid-template-rows: 1fr 11fr;
+    position: relative;
+}
+
+#right .priceAndRating{
+    display: flex;
+    justify-content: space-between;
+}
+
+#right .priceAndRating p{
+    margin-right: 2vw;
+}
+
+#right figure{
+    background-image: url("./cottonWeave.png");
+    background-size: cover;
+    background-position: 0 90%;
+}
+
+#right #addToBag{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 9vw;
+    height: 9vw;
+    font-size: 1.5vw;
+    padding: 1vw;
+    background-color: rgb(32, 33, 41);
+    color: white;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    top: 35%;
+    right: 15%;
+}
+
+#right #verticalDescription{
+    transform-origin: 0 0;
+    rotate: -90deg;
+    position: absolute;
+    bottom: 3%;
+    left: -1%;
+    font-size: 1.5vw;
+    font-weight: 600;
+}
+
+
+@media (max-width:1281px) {
+    #left h1{
+        font-size: 10.5vw;
+        line-height: 9vw;
+    }
+
+    #left #details h3{
+        font-size: 2.5vw;
+        font-weight: 600;
+    }
+
+    #left #details p{
+        line-height: 2vw;
+        font-size: 1.3vw;
+        font-weight: 500;
+    }
+
+    #right #verticalDescription{
+        font-size: 2.2vw;
+        font-weight: 600;
+        left: -5%;
+    }
+
+    #right #addToBag{
+        width: 11vw;
+        height: 11vw;
+        font-size: 1.6vw;
+    }
+}
+
+@media (max-width:1023px),(max-width:1025px) and (min-height:1365px) {
+    main{
+        padding: 2vw;
+        grid-template-columns: 1fr;
+        grid-template-rows: 5fr 7fr;
+    }
+
+    #left{
+        grid-template-columns: 4fr 8fr;
+        grid-template-rows: 8fr 4fr;
+        padding-bottom: 1vw;
+        justify-items: center;
+    }
+
+    #left h1{
+        font-size: 19vw;
+        line-height: 15vw;
+        font-weight: 450;
+        text-align: center;
+        grid-column: 1/3;
+    }
+    
+    #left #button{
+        border-radius: 3vw;
+        border: .2vw solid black;
+        padding: 1vw 3vw;
+        gap: 1vw;
+    }
+
+    #left #button span{
+        margin-right: 1vw;
+        font-size: 3vw;
+    }
+    
+    #left #button .colors{
+        height: 3vw;
+        width: 3vw;
+    }
+
+    #left #details h3{
+        font-size: 4vw;
+    }
+
+    #left #details p{
+        line-height: 3vw;
+        font-size: 2vw;
+        font-weight: 500;
+    }
+    
+    #right .priceAndRating h3{
+        font-size: 4vw;
+    }
+
+    #right .priceAndRating p{
+        font-size: 2vw;
+    }
+    
+
+    #right #verticalDescription{
+        left: 90%;
+        font-size: 4vw;
+        width: 50%;
+    }
+
+    #right #addToBag{
+        width: 16vw;
+        height: 16vw;
+        font-size: 2.5vw;
+        top: 10%;
+        right: 9%;
+    }
+}
+
+@media (max-width:430px) {
+    #left h1{
+        font-size: 20vw;
+        line-height: 21vw;
+    }
+
+    #left #details p{
+        line-height: 3.3vw;
+        font-size: 2.4vw;
+    }
+
+    #right .priceAndRating h3{
+        font-size: 5vw;
+    }
+    
+    #right .priceAndRating p{
+       font-size: 3vw;
+    }
+
+    #right #verticalDescription{
+        font-size: 5vw;
+    }
+
+    #right #addToBag{
+        width: 20vw;
+        height: 20vw;
+        font-size: 3vw;
+        font-weight: bold;
+        top: 9%;
+    }
+}
