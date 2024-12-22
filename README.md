@@ -19,6 +19,6 @@
 - Design Link -  [Trendline Design](https://cdn.dribbble.com/users/981879/screenshots/5337169/media/69f6c0670093540d16f45146f25d4d62.png?resize=1200x900&vertical=center)
 - Website Link - [Trendline](https://trendline-ten.vercel.app/)
 
-### 04 Premier
+### 05 Premier
 - Design Link -  [Premier Design](https://www.behance.net/gallery/97376811/Premier)
 - Website Link - [Premier](https://premier-opal.vercel.app/)
