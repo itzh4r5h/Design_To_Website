@@ -1068,17 +1068,17 @@ footer nav .links #last .lower{
 }
 
 
-footer nav .links #last .lower .socialLinks{
+footer nav .links #last .lower .social_Links{
     display: flex;
     gap: 1vw;
     padding-bottom: 1vw;
 }
 
-footer nav .links #last .lower .socialLinks li{
+footer nav .links #last .lower .social_Links li{
     list-style: none;
 }
 
-footer nav .links #last .lower .socialLinks i{
+footer nav .links #last .lower .social_Links i{
     color: #4B4B4B;
     font-size: 1.2vw;
 }
@@ -1088,7 +1088,7 @@ footer nav .links #last .lower p{
     font-size: 1vw;
 }
 
-footer nav .links #last .lower .socialLinks,
+footer nav .links #last .lower .social_Links,
 footer nav .links #last .lower p{
     width: fit-content;
 }
