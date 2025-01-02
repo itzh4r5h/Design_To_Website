@@ -1,0 +1,1168 @@
+@media (min-width: 2560px) {
+    body{
+        display: flex;
+        justify-content: center;
+    }
+    main{
+        width: 2560px;
+    }
+
+    /* ################## maison ################# */
+    #maison .maisonLeft .svg-container .circularText{
+        height: 35rem;
+        width: 35rem;
+    }
+
+    #maison .maisonLeft .svg-container .arrowInsideCircularText{
+        height: 8rem;
+        width: 8rem;
+    }
+}
+
+@media (max-width: 2560px) {
+    /* ################## maison ################# */
+    #maison .maisonLeft .svg-container .circularText{
+        height: 35rem;
+        width: 35rem;
+    }
+
+    #maison .maisonLeft .svg-container .arrowInsideCircularText{
+        height: 8rem;
+        width: 8rem;
+    }
+}
+
+@media (max-width: 2350px) {
+    /* ################## maison ################# */
+    #maison .maisonLeft .svg-container .circularText{
+        height: 32rem;
+        width: 32rem;
+    }
+
+    #maison .maisonLeft .svg-container .arrowInsideCircularText{
+        height: 7rem;
+        width: 7rem;
+    }
+}
+
+@media (max-width: 2000px) {
+    /* ################## maison ################# */
+    #maison .maisonLeft .svg-container .circularText{
+        height: 30rem;
+        width: 30rem;
+    }
+
+    #maison .maisonLeft .svg-container .arrowInsideCircularText{
+        height: 6rem;
+        width: 6rem;
+    }
+}
+
+@media (max-width: 1800px) {
+    /* ################## maison ################# */
+    #maison .maisonLeft .svg-container .circularText{
+        height: 26rem;
+        width: 26rem;
+    }
+
+    #maison .maisonLeft .svg-container text{
+        font-size: 1.56rem;
+        letter-spacing: .15rem;
+    }
+}
+
+@media (max-width: 1600px) {
+    /* ################## maison ################# */
+    #maison .maisonLeft .svg-container .circularText{
+        height: 25rem;
+        width: 25rem;
+    }
+
+    #maison .maisonLeft .svg-container .arrowInsideCircularText{
+        height: 5rem;
+        width: 5rem;
+    }
+}
+
+@media (max-width: 1500px) {
+    /* ################## maison ################# */
+    #maison .maisonLeft .svg-container .circularText{
+        height: 23rem;
+        width: 23rem;
+    }
+
+}
+
+
+@media (max-width: 1450px) {
+    /* ################## maison ################# */
+    #maison .maisonLeft .svg-container .circularText{
+        height: 20rem;
+        width: 20rem;
+    }
+
+    #maison .maisonLeft .svg-container .arrowInsideCircularText{
+        height: 4rem;
+        width: 4rem;
+    }
+}
+
+@media (max-width: 1281px) {
+
+    /* ################## NAVBAR ################# */
+    nav{
+        height: 5.6vw;
+    }
+
+    nav .logo h1{
+        font-size: 2.6vw;
+    }
+
+    nav .logo h1::before{
+        font-size: 1.5vw;
+    }
+
+    nav .logo h1::after{
+        font-size: .8vw;
+    }
+
+    nav .links>li,
+    nav #menuButtons>li{
+        font-size: 1.6vw;
+    }
+
+    /* ################## HEADER ################# */
+
+    header figure img{
+        height: 43vw;
+    }
+
+     /* ################## ModelFace ################# */
+     .modelsFace .modelContainer{
+        height: 13vw;
+        width: 13vw;
+     }
+
+     .modelsFace .modelContainer figure img{
+        height: 11vw;
+    }
+
+    .modelsFace .modelContainer h3{
+        font-size: 1.4vw;
+    }
+
+     /* ################## FILTER ################# */
+     #filter h3{
+        font-size: 2.2vw;
+    }
+    
+    #filter #alphabets h4{
+        font-size: 1.5vw;
+    }
+
+    /* ################## maison ################# */
+    #maison .maisonLeft .svg-container .circularText{
+        height: 18rem;
+        width: 18rem;
+    }
+
+     /* ################## JUST IMAGE ################# */
+
+    #justImage,
+    #justImage2{
+        height: 52vw;
+    }
+
+    /* ################## UPDATES ################# */
+    #updates>h1{
+        font-size: 3.5vw;
+    }
+
+    #updates .updatesContainer .categorySection .brandName h1{
+        font-size: 4vw;
+    }
+
+     /* ################## MOVIE SHOTS ################# */
+    #movieShot{
+        height: 52vw;
+    }
+
+    #movieShot .movieShotRight h1{
+        font-size: 3vw;
+    }
+    
+    #movieShot .movieShotRight h3{
+        font-size: 2vw;
+    }
+    
+    #movieShot .movieShotRight p{
+        font-size: 1.5vw;
+    }
+
+    /* ################## MARQUEE ################# */
+    #marquee h1{
+        font-size: 4vw;
+    }
+
+     /* ################## BLOG ################# */
+
+    #blog{
+        height: 42vw;
+    }
+
+    #blog .blogLeft h1{
+        font-size: 3vw;
+    }
+
+    /* ################## FOOTER ################# */
+    footer nav .links #last .lower p{
+        font-size: .9rem;
+    }
+
+    footer nav .links #last .lower .social_Links i{
+        color: #4B4B4B;
+        font-size: 1.3rem;
+    }
+
+    footer nav .links>li:nth-child(3) {
+        width: 135%;
+    }
+
+}
+
+@media (max-width:1050px){
+    /* ################## HEADER ################# */
+
+    header figure img{
+        height: 45vw;
+    }
+
+    hr{
+        height: .15vw;
+    }
+    
+    header figure figcaption .headingContainer h1{
+        font-size: 4vw;
+    }
+    
+    header figcaption .explore h4{
+        font-size: 1.5vw;
+    }
+    
+    header figcaption .explore svg{
+        height: 3.5vw;
+    }
+
+    /* ################## ModelFace ################# */
+    .modelsFace .modelContainer{
+        height: 14vw;
+        width: 14vw;
+     }
+
+     .modelsFace .modelContainer figure img{
+        height: 11.5vw;
+    }
+
+    .modelsFace .modelContainer h3{
+        font-size: 1.5vw;
+    }
+
+    /* ################## FILTER ################# */
+    #filter h3{
+        font-size: 2.3vw;
+    }
+    
+    #filter #alphabets h4{
+        font-size: 1.6vw;
+    }
+
+    /* ################## maison ################# */
+    #maison .maisonLeft .svg-container .circularText{
+        height: 17rem;
+        width: 17rem;
+    }
+
+    #maison .maisonLeft .svg-container text{
+        font-size: 1.56rem;
+        letter-spacing: .15rem;
+    }
+
+    #maison .maisonLeft .svg-container .arrowInsideCircularText{
+        height: 4rem;
+        width: 4rem;
+    }
+
+    /* ################## JUST IMAGE ################# */
+
+    #justImage,
+    #justImage2{
+        height: 54vw;
+    }
+
+    /* ################## UPDATES ################# */
+    #updates>h1{
+        font-size: 4vw;
+    }
+
+    #updates .updatesContainer .categorySection .brandName h1{
+        font-size: 4.5vw;
+    }
+
+     /* ################## DUA_LIPA ################# */
+
+    #duaLipa{
+        height: 62vw;
+    }
+
+    #duaLipa .right h2{
+        font-size: 2vw;
+    }
+    
+    #duaLipa .right p{
+        font-size: 1.5vw;
+    }
+
+    /* ################## MARQUEE ################# */
+    #marquee h1{
+        font-size: 4.5vw;
+    }
+
+    /* ################## BLOG ################# */
+
+    #blog{
+        height: 43vw;
+    }
+
+    #blog .blogContent h3{
+        font-size: 1.8vw;
+    }
+}
+
+@media (max-width:1025px) and (min-height:1365px) {
+    /* ################## HEADER ################# */
+    header figure img{
+        height: 45vw;
+    }
+
+    hr{
+        height: .15vw;
+    }
+    
+    header figure figcaption .headingContainer h1{
+        font-size: 4vw;
+    }
+    
+    header figcaption .explore h4{
+        font-size: 1.5vw;
+    }
+    
+    header figcaption .explore svg{
+        height: 3vw;
+    }
+
+
+     /* ################## SHOTS ################# */
+     #shot{
+        flex-direction: column;
+        height: 150vw;
+     }
+
+     #shot .shotLeft,
+     #shot .shotRight{
+        width: 100%;
+        height: 100%;
+     }
+
+     #shot .shotRight{
+        grid-template-columns: 60% 20% 20%;
+        grid-template-rows: 100%;
+        gap: 1vw;
+        height: 80%;
+    }
+
+    #shot .shotRight figure{
+        grid-column: 1/2;
+    }
+
+    #shot .shotRight h3{
+        font-size: 4vw;
+        text-align: center;
+    }
+    
+    #shot .shotRight p{
+        font-size: 2.5vw;
+        text-align: center;
+    }
+
+    #duaLipa .right h2 {
+        font-size: 1.9vw;
+    }
+
+}
+
+
+
+@media (max-width: 900px) {
+    /* ################## NAVBAR ################# */
+    nav{
+        height: 5.7vw;
+    }
+
+    nav .logo h1{
+        font-size: 3vw;
+    }
+
+    nav .logo h1::before{
+        font-size: 1.6vw;
+        top: -6%;
+        right: -10%;
+    }
+
+    nav .logo h1::after{
+        font-size: .85vw;
+        right: -2%; 
+    }
+
+    nav .links>li,
+    nav #menuButtons>li{
+        font-size: 2vw;
+        width: 50%;
+    }
+
+    nav .links>li:nth-child(3){
+        width: 80%;
+    }
+
+    nav .linksContainer,
+    nav .linksContainer .links{
+        width: 85%;
+    }
+
+    /* ################## HEADER ################# */
+
+    header figure img{
+        height: 45vw;
+    }  
+
+    /* ################## ModelFace ################# */
+    .modelsFace .modelContainer{
+        height: 15vw;
+        width: 15vw;
+     }
+
+     .modelsFace .modelContainer figure img{
+        height: 12.5vw;
+    }
+
+    .modelsFace .modelContainer h3{
+        font-size: 1.6vw;
+    }
+
+    /* ################## FILTER ################# */
+    #filter h3{
+        font-size: 2.4vw;
+    }
+    
+    #filter #alphabets h4{
+        font-size: 1.7vw;
+    }
+
+     /* ################## SHOTS ################# */
+     #shot{
+        flex-direction: column;
+        height: 150vw;
+     }
+
+     #shot .shotLeft,
+     #shot .shotRight{
+        width: 100%;
+        height: 100%;
+     }
+
+     #shot .shotRight{
+        grid-template-columns: 60% 20% 20%;
+        grid-template-rows: 100%;
+        gap: 1vw;
+        height: 80%;
+    }
+
+    #shot .shotRight figure{
+        grid-column: 1/2;
+    }
+
+    #shot .shotRight h3{
+        font-size: 4vw;
+        text-align: center;
+    }
+    
+    #shot .shotRight p{
+        font-size: 2.5vw;
+        text-align: center;
+    }
+
+    /* ################## maison ################# */
+    #maison .maisonLeft .svg-container .circularText{
+        height: 15rem;
+        width: 15rem;
+    }
+
+    #maison .maisonLeft .svg-container .arrowInsideCircularText{
+        height: 3.5rem;
+        width: 3.5rem;
+    }
+
+    /* ################## JUST IMAGE ################# */
+
+    #justImage,
+    #justImage2{
+        height: 55vw;
+    }
+
+    /* ################## UPDATES ################# */
+    #updates>h1{
+        font-size: 4.5vw;
+    }
+
+    /* ################## MARQUEE ################# */
+    #marquee h1{
+        font-size: 5vw;
+    }
+
+    /* ################## FOOTER ################# */
+    footer nav .linksContainer, nav .linksContainer .links {
+        width: 100%;
+    }
+
+    footer nav .links #last .lower p{
+        font-size: .9rem;
+    }
+
+    footer nav .links #last .lower .social_Links i{
+        color: #4B4B4B;
+        font-size: 1.3rem;
+    }
+
+    footer nav .links>li:nth-child(3) {
+        width: 135%;
+    }
+
+}
+
+@media (max-width: 780px) {
+    /* ################## NAVBAR ################# */
+    nav{
+        height: 6.7vw;
+    }
+
+    nav .logo h1{
+        font-size: 3.5vw;
+    }
+
+    nav .logo h1::before{
+        font-size: 1.8vw;
+        top: -3%;
+        right: -9%;
+    }
+
+    nav .logo h1::after{
+        font-size: 1.1vw;
+        right: -1%; 
+    }
+
+    nav .links>li{
+        display: none;
+    }
+
+    nav .linksContainer,
+    nav .linksContainer .links{
+        width: 100%;
+    }
+
+    nav .linksContainer .links{
+        width: 70%;
+    }
+
+    nav #menuButtons{
+        width: 30%;
+    }
+
+    nav #menuButtons>li{
+        font-size: 2.2vw;
+    }
+
+    nav #menuButtons #menuIcon{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    nav #menuButtons #menuIcon a i{
+        font-size: 3vw;
+        cursor: pointer;
+    }
+
+    /* ################## HEADER ################# */
+
+    header figure img{
+        height: 48vw;
+    }
+
+    hr{
+        height: .16vw;
+    }
+    
+    header figure figcaption .headingContainer h1{
+        font-size: 4.2vw;
+    }
+    
+    header figcaption .explore h4{
+        font-size: 1.6vw;
+    }
+    
+    header figcaption .explore svg{
+        height: 3.6vw;
+    }
+
+    /* ################## ModelFace ################# */
+    .modelsFace .modelContainer{
+        height: 16vw;
+        width: 16vw;
+     }
+
+     .modelsFace .modelContainer figure img{
+        height: 13.5vw;
+    }
+
+    .modelsFace .modelContainer h3{
+        font-size: 1.7vw;
+    }
+
+    /* ################## FILTER ################# */
+    #filter h3{
+        font-size: 2.5vw;
+        height: fit-content;
+    }
+
+    #filter #alphabets{
+        width: 90%;
+        flex-wrap: wrap;
+        gap: 1vw;
+        justify-content: center;
+    }
+    
+    #filter #alphabets h4{
+        font-size: 2vw;
+    }
+
+    #filter #alphabets h4,
+    #filter #alphabets .alphaContainer input{
+        height: 2.9vw;
+        width: 3.2vw;
+    }
+
+    /* ################## maison ################# */
+
+    #maison{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 1.5fr;
+        height: 150vw;
+        width: 100%;
+    }
+    
+
+    #maison .maisonLeft,
+    #maison .maisonRight{
+        width: 100%;
+    }
+
+    #maison .maisonLeft h1{
+        font-size: 3vw;
+        justify-self: center;
+    }
+    
+    #maison .maisonLeft .svg-container .circularText{
+        height: 20rem;
+        width: 20rem;
+    }
+
+    #maison .maisonLeft .svg-container .arrowInsideCircularText{
+        height: 5rem;
+        width: 5rem;
+    }
+
+    /* ################## JUST IMAGE ################# */
+
+    #justImage,
+    #justImage2{
+        height: 56vw;
+    }
+    
+    /* ################## UPDATES ################# */
+    #updates>h1{
+        font-size: 5vw;
+    }
+
+    #updates .updatesContainer .categorySection h3{
+        width: 30%;
+    }
+
+    #updates .updatesContainer .categorySection .brandName h1{
+        font-size: 5vw;
+    }
+
+    #updates .updatesContainer .categorySection .brandName:nth-child(3){
+        width: 70%;
+    }
+
+    #updates .updatesContainer .categorySection .imagePart,
+    #updates .updatesContainer .categorySection .brandName:nth-child(2){
+       display: none;
+    }
+    
+    /* ################## MOVIE SHOTS ################# */
+    #movieShot{
+        height: 200vw;
+        flex-direction: column;
+    }
+
+    #movieShot .movieShotLeft,
+    #movieShot .movieShotRight{
+        height: 100%;
+        width: 100%;
+    }
+
+    #movieShot .movieShotRight h1{
+        font-size: 6vw;
+    }
+    
+    #movieShot .movieShotRight h3{
+        font-size: 4vw;
+    }
+    
+    #movieShot .movieShotRight p{
+        font-size: 3vw;
+    }
+
+    /* ################## DUA_LIPA ################# */
+
+    #duaLipa{
+        height: 240vw;
+        flex-direction: column;
+    }
+
+    #duaLipa .left,
+    #duaLipa .right{
+        width: 100%;
+    }
+
+    #duaLipa .right h2{
+        align-self: start;
+        font-size: 4vw;
+    }
+    
+    #duaLipa .right p{
+        font-size: 2.3vw;
+    }
+
+    /* ################## BLOG ################# */
+
+    #blog{
+        height: 150vw;
+        flex-direction: column;
+        gap: 3.5vw;
+    }
+
+    #blog .blogLeft{
+        height: fit-content;
+    }
+
+    #blog .blogLeft h1{
+        font-size: 5vw;
+    }
+
+    #blog .blogContent{
+        width: 60%;
+    }
+
+    #blog .blogContent:nth-child(3){
+       align-self: end;
+    }
+
+    #blog .blogContent h3{
+        font-size: 3vw;
+    }
+
+    #blog .blogContent h3::after{
+        height: 2.5vw;
+        width: 2.9vw;
+        font-size: 2vw;
+        top: 1%;
+    }
+
+    /* ################## FOOTER ################# */
+    footer nav .linksContainer, footer nav .linksContainer .links {
+        width: 100%;
+    }
+
+    footer nav a{
+        font-size: 1.1rem;
+    }
+
+    footer nav .links #last .lower p{
+        font-size: .8rem;
+    }
+
+
+}
+
+
+@media (max-width: 661px) {
+    /* ################## NAVBAR ################# */
+    nav{
+        height: 6.7vw;
+    }
+
+    nav .logo h1{
+        font-size: 4vw;
+    }
+
+    nav .logo h1::before{
+        font-size: 1.9vw;
+    }
+
+    nav .logo h1::after{
+        font-size: 1.3vw;
+    }
+
+    nav #menuButtons>li{
+        font-size: 2.4vw;
+    }
+
+    nav #menuButtons #menuIcon a i{
+        font-size: 3.4vw;
+    }
+
+    /* ################## HEADER ################# */
+
+    header figure img{
+        height: 50vw;
+    }
+
+    hr{
+        margin-bottom: 2.5vw;
+    }
+
+    /* ################## ModelFace ################# */
+    .modelsFace .modelContainer{
+        height: 17vw;
+        width: 17vw;
+     }
+
+     .modelsFace .modelContainer figure img{
+        height: 14vw;
+    }
+    
+    .modelsFace .modelContainer h3{
+        font-size: 1.9vw;
+    }
+
+
+    /* ################## FILTER ################# */
+    #filter h3{
+        font-size: 2.7vw;
+    }
+    
+    #filter #alphabets h4{
+        font-size: 2.3vw;
+    }
+
+    #filter #alphabets h4,
+    #filter #alphabets .alphaContainer input{
+        height: 3.1vw;
+        width: 3.4vw;
+    }
+
+    /* ################## maison ################# */
+    #maison .maisonLeft h1{
+        font-size: 4vw;
+    }
+
+    /* ################## JUST IMAGE ################# */
+
+    #justImage,
+    #justImage2{
+        height: 57vw;
+    }
+
+    /* ################## UPDATES ################# */
+    #updates>h1{
+        font-size: 5.5vw;
+    }
+
+
+    #updates .updatesContainer .categorySection h3{
+       font-size: 3vw;
+    }
+
+    #updates .updatesContainer .categorySection .brandName h1{
+        font-size: 5.5vw;
+    }
+
+    /* ################## BLOG ################# */
+
+    #blog .blogLeft h1{
+        font-size: 6vw;
+    }
+
+    #blog .blogContent{
+        width: 70%;
+    }
+
+    #blog .blogContent h3{
+        font-size: 2.9vw;
+    }
+
+    #blog .blogContent h3::after{
+        top: -1%;
+    }
+
+}
+
+@media (max-width: 561px) {
+    /* ################## NAVBAR ################# */
+    nav{
+        height: 8.5vw;
+    }
+
+    nav .logo h1{
+        font-size: 4.5vw;
+    }
+
+    nav .logo h1::before{
+        font-size: 2vw;
+        right: -8%;
+    }
+
+    nav .logo h1::after{
+        font-size: 1.5vw;
+        right: -2%;
+    }
+
+    nav .linksContainer .links {
+        width: 60%;
+    }
+
+    nav #menuButtons {
+        width: 35%;
+    }
+
+    nav #menuButtons>li{
+        font-size: 2.8vw;
+    }
+
+    nav #menuButtons #menuIcon a i{
+        font-size: 3.8vw;
+    }
+
+    /* ################## HEADER ################# */
+
+    hr{
+        height: .17vw;
+    }
+    
+    header figure figcaption .headingContainer h1{
+        font-size: 4.5vw;
+    }
+    
+    header figcaption .explore h4{
+        font-size: 1.8vw;
+    }
+    
+    header figcaption .explore svg{
+        height: 3.8vw;
+    }
+
+    /* ################## ModelFace ################# */
+    .modelsFace .modelContainer{
+        height: 18vw;
+        width: 18vw;
+     }
+
+     .modelsFace .modelContainer figure img{
+        height: 15vw;
+    }
+    
+    .modelsFace .modelContainer h3{
+        font-size: 2.1vw;
+    }
+
+    /* ################## FILTER ################# */
+    #filter h3{
+        font-size: 3vw;
+    }
+    
+    #filter #alphabets h4{
+        font-size: 2.5vw;
+    }
+
+    /* ################## maison ################# */
+    #maison .maisonLeft .svg-container .circularText{
+        height: 15rem;
+        width: 15rem;
+    }
+
+    #maison .maisonLeft .svg-container .arrowInsideCircularText{
+        height: 4rem;
+        width: 4rem;
+    }
+
+    /* ################## JUST IMAGE ################# */
+
+    #justImage,
+    #justImage2{
+        height: 58vw;
+    }
+
+    /* ################## UPDATES ################# */
+    #updates>h1{
+        font-size: 6vw;
+    }
+
+    #updates .updatesContainer .categorySection h3{
+        font-size: 3.2vw;
+     }
+ 
+     #updates .updatesContainer .categorySection .brandName h1{
+         font-size: 6vw;
+     }
+
+    /* ################## MARQUEE ################# */
+    #marquee h1{
+        font-size: 5.5vw;
+    }
+}
+
+@media (max-width: 461px) {
+    /* ################## NAVBAR ################# */
+    nav{
+        height: 10vw;
+    }
+
+    nav .logo h1{
+        font-size: 5vw;
+        letter-spacing: -.5vw;
+    }
+
+    nav .logo h1::before{
+        font-size: 2.5vw;
+    }
+
+    nav .logo h1::after{
+        font-size: 1.65vw;
+    }
+
+    nav #menuButtons>li{
+        font-size: 3vw;
+    }
+
+    nav #menuButtons #menuIcon a i{
+        font-size: 4vw;
+    }
+
+     /* ################## HEADER ################# */
+    hr{
+        height: .19vw;
+    }
+    
+    header figure figcaption .headingContainer h1{
+        font-size: 4.9vw;
+    }
+    
+    header figcaption .explore h4{
+        font-size: 1.8vw;
+    }
+    
+    header figcaption .explore svg{
+        height: 4vw;
+    }
+    
+    /* ################## ModelFace ################# */
+    .modelsFace .modelContainer{
+        height: 19.5vw;
+        width: 19.5vw;
+     }
+
+     .modelsFace .modelContainer figure img{
+        height: 16vw;
+    }
+
+    .modelsFace .modelContainer h3{
+        font-size: 2.3vw;
+    }
+
+    /* ################## FILTER ################# */
+    #filter h3{
+        font-size: 3.5vw;
+    }
+    
+    #filter #alphabets h4{
+        font-size: 2.8vw;
+    }
+
+    #filter #alphabets h4,
+    #filter #alphabets .alphaContainer input{
+        height: 3.7vw;
+        width: 4vw;
+    }
+
+    /* ################## SHOTS ################# */
+    #shot{
+        height: 80%;
+    }
+
+    /* ################## maison ################# */
+    #maison .maisonLeft h1{
+        font-size: 5vw;
+    }
+
+    /* ################## JUST IMAGE ################# */
+
+    #justImage,
+    #justImage2{
+        height: 60vw;
+    }
+
+    /* ################## UPDATES ################# */
+    #updates>h1{
+        font-size: 6.5vw;
+    }
+
+    #updates .updatesContainer .categorySection h3{
+        font-size: 3.5vw;
+     }
+ 
+     #updates .updatesContainer .categorySection .brandName h1{
+         font-size: 6.5vw;
+     }
+
+     /* ################## BLOG ################# */
+
+    #blog .blogLeft h1{
+        font-size: 7vw;
+    }
+
+
+    #blog .blogContent h3{
+        font-size: 3.4vw;
+    }
+
+    #blog .blogContent h3::after{
+        top: -1%;
+        left: -2%;
+        height: 3vw;
+        width: 3.4vw;
+        font-size: 2.5vw;
+    }
+}

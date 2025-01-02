@@ -1,0 +1,106 @@
+@media (max-width: 1281px) {
+    .loader h2{
+        font-size: 1.6vw;
+    }
+
+    .loader svg{
+        height: 7.5vw;
+        width: 7.5vw;
+    }
+    
+    .loader svg circle{
+        r: 3.2vw;
+        cx: 3.2vw;
+        cy: 3.2vw;
+    }
+}
+@media (max-width: 1181px) {
+    .loader h2{
+        font-size: 1.8vw;
+    }
+
+    .loader svg{
+        height: 7.7vw;
+        width: 7.7vw;
+    }
+    
+    .loader svg circle{
+        r: 3.3vw;
+        cx: 3.3vw;
+        cy: 3.3vw;
+    }
+}
+@media (max-width: 1051px) {
+    .loader h2{
+        font-size: 1.9vw;
+    }
+
+    .loader svg{
+        height: 8.5vw;
+        width: 8.5vw;
+    }
+    
+    .loader svg circle{
+        r: 3.6vw;
+        cx: 3.6vw;
+        cy: 3.6vw;
+    }
+}
+@media (max-width: 950px) {
+    .loader h2{
+        font-size: 2vw;
+    }
+
+    .loader svg{
+        height: 9vw;
+        width: 9vw;
+    }
+    
+    .loader svg circle{
+        r: 3.9vw;
+        cx: 3.9vw;
+        cy: 3.9vw;
+    }
+}
+
+@media (max-width:751px){
+    .loader h2{
+        font-size: 2.4vw;
+    }
+
+    .loader svg{
+        height: 9.4vw;
+        width: 9.4vw;
+    }
+    
+    .loader svg circle{
+        r: 4.1vw;
+        cx: 4.1vw;
+        cy: 4.1vw;
+    }
+
+    .loader svg circle:nth-child(2){
+        stroke-width: 2;
+    }
+}
+
+@media (max-width: 551px){
+    .loader h2{
+        font-size: 2.7vw;
+    }
+
+    .loader svg{
+        height: 10vw;
+        width: 10vw;
+    }
+    
+    .loader svg circle{
+        r: 4.4vw;
+        cx: 4.4vw;
+        cy: 4.4vw;
+    }
+
+    .loader svg circle:nth-child(2){
+       animation-duration: 10s;
+    }
+}

@@ -29,6 +29,8 @@ main{
     padding-top: 2vw;
 }
 
+/* ################## NAVBAR ################# */
+
 nav{
     border-top: .15vw solid black;
     border-bottom: .15vw solid black;
@@ -42,7 +44,7 @@ nav{
 nav .logo h1{
     font-size: 2.5vw;
     font-family: monumentUB;
-    letter-spacing: -5px;
+    letter-spacing: -.35vw;
     position: relative;
     text-transform: lowercase;
 }
@@ -65,10 +67,6 @@ nav .logo h1::after{
     right: -1%;
     font-family: 'Roboto';
     color: #8c8b8b;
-}
-
-nav #menu{
-    display: none;
 }
 
 nav .linksContainer,
@@ -119,48 +117,48 @@ nav #menuButtons #menuIcon{
 }
 
 header{
-    padding: 3vw 5vw;
-    height: 46vw;
     width: 100%;
-    position: relative;
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-areas: "stack";
+    padding: 3vw 5vw;
 }
+
+ /* ################## HEADER ################# */
 
 header figure{
     height: fit-content;
     width: 100%;
-    position: absolute;
-    padding: 0 5vw;
+    grid-area: stack;
     animation-name: hideImage;
     animation-duration: 2s;
     animation-timing-function: linear;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
     transition: clip-path 1s ease-in-out;
+    position: relative;
 }
 
 header figure:nth-child(1){
-    animation-delay: 4s;
+    animation-delay: 6s;
     z-index: 6;
 }
 header figure:nth-child(2){
-    animation-delay: 10s;
+    animation-delay: 13s;
     z-index: 5;
 }
 
 header figure:nth-child(3){
-    animation-delay: 16s;
+    animation-delay: 20s;
     z-index: 4;
 }
 
 header figure:nth-child(4){
-    animation-delay: 22s;
+    animation-delay: 27s;
     z-index: 3;
 }
 
 header figure:nth-child(5){
-    animation-delay: 28s;
+    animation-delay: 32s;
     z-index: 2;
     animation-play-state: paused;
 }
@@ -182,9 +180,9 @@ header figure img{
 
 header figcaption{
     position: absolute;
+    padding: 0 3vw;
     z-index: 1;
-    padding: 0 8vw;
-    bottom: 8%;
+    bottom: 10%;
     left: 0;
     right: 0;
 }
@@ -199,8 +197,8 @@ header figure figcaption .explore{
 hr{
     border: none;
     height: .1vw;
-    color: white;  /* old IE */
-    background-color: white;  /* Modern Browsers */
+    color: white;
+    background-color: white; 
     margin-top: 2vw;
     margin-bottom: 1.5vw;
 }
@@ -229,9 +227,10 @@ header figcaption .explore svg{
 .loader h2{
     color: white;
     position: absolute;
-    top: 45%;
-    left: 45%;
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
+    font-size: 1.5vw;
 }
 
 .loader svg{
@@ -246,7 +245,10 @@ header figcaption .explore svg{
     fill: transparent;
     stroke-width: 1;
     stroke: rgba(255, 255, 255, 0.547);
-    transform: translate(.5vw,.5vw);
+    transform: translate(8%,8%);   
+    r: 3vw;
+    cx: 3vw;
+    cy: 3vw;
 }
 
 .loader svg circle:nth-child(2){
@@ -261,20 +263,24 @@ header figcaption .explore svg{
     animation-fill-mode: forwards;
 }
 
+header figure:nth-child(1) .loader svg circle:nth-child(2){
+    animation-delay: 1s;
+}
+
 header figure:nth-child(2) .loader svg circle:nth-child(2){
-    animation-delay: 6s;
+    animation-delay: 8s;
 }
 
 header figure:nth-child(3) .loader svg circle:nth-child(2){
-    animation-delay: 12s;
+    animation-delay: 15s;
 }
 
 header figure:nth-child(4) .loader svg circle:nth-child(2){
-    animation-delay: 18s;
+    animation-delay: 22s;
 }
 
 header figure:nth-child(5) .loader svg circle:nth-child(2){
-    animation-delay: 24s;
+    animation-delay: 28s;
 }
 
 @keyframes loading {
@@ -433,31 +439,37 @@ header figure:nth-child(5) .loader svg circle:nth-child(2){
     }
 }
 
+ /* ################## ModelFace ################# */
+
 #scroll{
-    height: 20vw;
+    height: fit-content;
     width: 100%;
     padding: 3vw 0;
     white-space: nowrap;
     overflow-x: scroll;
     overflow-y: hidden;
+    display: flex;
+    gap: 3vw;
 }
 
 .modelsFace{
+    flex-shrink: 0;
     width: fit-content;
-    height: 100%;
-    display: inline-block;
+    display: flex;
     animation-name: movingContinuously;
     animation-duration: 14s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
+    user-select: none;
+    gap: 3vw;
 }
 
 @keyframes movingContinuously {
-    from{
+    0%{
         transform: translateX(0);
     }
-    to{
-        transform: translateX(calc(-100% - 4px));
+    100%{
+        transform: translateX(calc(-100% - 3vw));
     }
 }
 
@@ -469,7 +481,6 @@ header figure:nth-child(5) .loader svg circle:nth-child(2){
     height: 12vw;
     width: 12vw;
     display: inline-block;
-    margin-right: 3vw;
 }
 
 .modelsFace .modelContainer figure img{
@@ -480,10 +491,12 @@ header figure:nth-child(5) .loader svg circle:nth-child(2){
 }
 
 .modelsFace .modelContainer h3{
-    font-size: 1.1vw;
-    padding-top: .5vw;
+    font-size: 1.2vw;
     text-align: center;
+    padding-top: .2vw;
 }
+
+ /* ################## FILTER ################# */
 
 #filter{
     border-top: .15vw solid black;
@@ -491,6 +504,7 @@ header figure:nth-child(5) .loader svg circle:nth-child(2){
     padding: 1.5vw 5vw;
     display: flex;
     justify-content: space-between;
+    margin-top: 1vw;
 }
 
 #filter h3{
@@ -518,8 +532,6 @@ header figure:nth-child(5) .loader svg circle:nth-child(2){
     justify-content: center;
     align-items: center;
     font-size: 1.3vw;
-    height: 2.7vw;
-    width: 3vw;
     border-radius: 50%;
 }
 
@@ -527,10 +539,14 @@ header figure:nth-child(5) .loader svg circle:nth-child(2){
     position: relative;
 }
 
+#filter #alphabets h4,
 #filter #alphabets .alphaContainer input{
-    position: absolute;
     height: 2.7vw;
     width: 3vw;
+}
+
+#filter #alphabets .alphaContainer input{
+    position: absolute;
     opacity: 0;
     cursor: pointer;
 }
@@ -543,7 +559,7 @@ header figure:nth-child(5) .loader svg circle:nth-child(2){
     border: .1vw solid black;
 }
 
-
+ /* ################## SHOTS ################# */
 #shot{
     display: flex;
     justify-content: center;
@@ -572,12 +588,12 @@ header figure:nth-child(5) .loader svg circle:nth-child(2){
 #shot .shotLeft figure{
     height: 100%;
     width: 100%;
-    background-image: url("./images/vogueShotLeft.jpg");
+    background-image: url("./images/vogueShotLeft.webp");
     background-size: cover;
 }
 
 #shot .shotRight figure{
-    background-image: url("./images/vogueShotRight.png");
+    background-image: url("./images/vogueShotRight.webp");
     height: 100%;
     width: 100%;
     background-size: cover;
@@ -586,7 +602,7 @@ header figure:nth-child(5) .loader svg circle:nth-child(2){
 
 #shot .shotRight h3,
 p{
-    padding-top: 2vw;
+    padding-top: 1vw;
 }
 
 #shot .shotRight h3{
@@ -595,17 +611,18 @@ p{
 }
 
 #shot .shotRight p{
-    font-size: 1vw;
-    line-height: 1.2vw;
+    font-size: 1.2vw;
     justify-self: end;
 }
 
 #vougeShotHeading{
     font-family: monumentUB;
     text-transform: uppercase;
-    font-size: 2.5vw;
+    font-size: 2.5rem;
     padding: 0 5vw;
 }
+
+/* ################## MAISON ################# */
 
 #maison{
     width: 100%;
@@ -632,8 +649,8 @@ p{
 }
 
 #maison .maisonLeft .svg-container .circularText{
-    height: 20vw;
-    width: 20vw;
+    height: 23rem;
+    width: 23rem;
     animation-name: textRotation;
     animation-timing-function: linear;
     animation-duration: 12s;
@@ -650,17 +667,17 @@ p{
 }
 
 #maison .maisonLeft .svg-container text{
-    font-size: 1.5vw;
-    letter-spacing: .18vw;
+    font-size: 1.56rem;
+    letter-spacing: .15rem;
 }
 
 #maison .maisonLeft .svg-container .arrowInsideCircularText{
-    height: 5vw;
-    width: 5vw;
+    height: 6rem;
+    width: 6rem;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -40%);
+    transform: translate(-50%, -35%);
 }
 
 #maison .maisonLeft h1{
@@ -678,11 +695,13 @@ p{
 }
 
 #maison .maisonRight figure{
-    background-image: url("./images/oulhajLook.png");
+    background-image: url("./images/oulhajLook.webp");
     background-size: cover;
     height: 100%;
     width: 100%;
 }
+
+ /* ################## JUST IMAGE ################# */
 
 #justImage,
 #justImage2{
@@ -699,7 +718,7 @@ p{
 }
 
 #justImage figure{
-    background-image: url('./images/justImage.png');
+    background-image: url('./images/justImage.webp');
 }
 
 #justImage2{
@@ -707,8 +726,10 @@ p{
 }
 
 #justImage2 figure{
-    background-image: url('./images/justImage2.png');
+    background-image: url('./images/justImage2.webp');
 }
+
+ /* ################## UPDATES ################# */
 
 #updates{
     padding: 2vw 5vw;
@@ -786,6 +807,7 @@ p{
     font-weight: 450;
 }
 
+ /* ################## MOVIE SHOTS ################# */
 
 #movieShot{
     width: 100%;
@@ -831,11 +853,9 @@ p{
 #movieShot .movieShotRight h3{
     font-size: 1.5vw;
     font-weight: 450;
-    line-height: 2vw;
 }
 
 #movieShot .movieShotRight p{
-    line-height: 1.3vw;
     font-size: 1vw;
 }
 
@@ -854,6 +874,7 @@ p{
     object-fit: cover;
 }
 
+ /* ################## DUA_LIPA ################# */
 
 #duaLipa{
     width: 100%;
@@ -911,15 +932,19 @@ p{
 
 #duaLipa .right p{
     padding-top: 0;
+    font-size: 1.3vw;
 }
+
+ /* ################## MARQUEE ################# */
 
 #marquee{
     padding: 1vw 0;
     border-top: .15vw solid black;
     border-bottom: .15vw solid black;
-    white-space: nowrap;
+    display: flex;
     margin: 6vw 0;
     overflow-x: scroll;
+    gap: 2rem;
 }
 
 #marquee::-webkit-scrollbar{
@@ -927,7 +952,7 @@ p{
 }
 
 #marquee h1{
-    display: inline-block;
+    flex-shrink: 0;
     width: fit-content;
     -webkit-text-stroke: .1vw black;
     color: transparent;
@@ -947,9 +972,11 @@ p{
         transform: translateX(0);
     }
     to{
-        transform: translateX(calc(-100% - 4px));
+        transform: translateX(calc(-100% - 2rem));
     }
 }
+
+ /* ################## BLOG ################# */
 
 #blog{
     margin-top: 5vw;
@@ -985,7 +1012,6 @@ p{
 #blog .blogContent h3{
     font-size: 1.8vw;
     font-weight: 500;
-    line-height: 2.3vw;
     padding-bottom: 1.5vw;
     text-indent: 4vw;
     position: relative;
@@ -1018,6 +1044,8 @@ p{
     width: 100%;
     object-fit: cover;
 }
+
+ /* ################## FOOTER ################# */
 
 footer{
     padding-bottom: 2vw;
@@ -1080,12 +1108,12 @@ footer nav .links #last .lower .social_Links li{
 
 footer nav .links #last .lower .social_Links i{
     color: #4B4B4B;
-    font-size: 1.2vw;
+    font-size: 1.5rem;
 }
 
 footer nav .links #last .lower p{
     padding: 0;
-    font-size: 1vw;
+    font-size: 1.1rem;
 }
 
 footer nav .links #last .lower .social_Links,
