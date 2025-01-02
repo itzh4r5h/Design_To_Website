@@ -588,12 +588,12 @@ header figure:nth-child(5) .loader svg circle:nth-child(2){
 #shot .shotLeft figure{
     height: 100%;
     width: 100%;
-    background-image: url("./images/vogueShotLeft.webp");
+    background-image: url("https://res.cloudinary.com/dpgaaou8p/image/upload/v1735843430/Premier/su25wbtbirjt18e3sykh.webp");
     background-size: cover;
 }
 
 #shot .shotRight figure{
-    background-image: url("./images/vogueShotRight.webp");
+    background-image: url("https://res.cloudinary.com/dpgaaou8p/image/upload/v1735843430/Premier/ncfovjyqdx9ueay9vqjf.webp");
     height: 100%;
     width: 100%;
     background-size: cover;
@@ -695,7 +695,7 @@ p{
 }
 
 #maison .maisonRight figure{
-    background-image: url("./images/oulhajLook.webp");
+    background-image: url("https://res.cloudinary.com/dpgaaou8p/image/upload/v1735843430/Premier/qze1upx5ubmlebgbsy9u.webp");
     background-size: cover;
     height: 100%;
     width: 100%;
@@ -718,7 +718,7 @@ p{
 }
 
 #justImage figure{
-    background-image: url('./images/justImage.webp');
+    background-image: url('https://res.cloudinary.com/dpgaaou8p/image/upload/v1735843430/Premier/ms5q5rcyljvxyxtiayt1.webp');
 }
 
 #justImage2{
@@ -726,7 +726,7 @@ p{
 }
 
 #justImage2 figure{
-    background-image: url('./images/justImage2.webp');
+    background-image: url('https://res.cloudinary.com/dpgaaou8p/image/upload/v1735843430/Premier/rbom4a9ldigcvkocapj8.webp');
 }
 
  /* ################## UPDATES ################# */
