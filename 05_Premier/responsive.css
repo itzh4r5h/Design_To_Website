@@ -1117,11 +1117,6 @@
         width: 4vw;
     }
 
-    /* ################## SHOTS ################# */
-    #shot{
-        height: 80%;
-    }
-
     /* ################## maison ################# */
     #maison .maisonLeft h1{
         font-size: 5vw;
