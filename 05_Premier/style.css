@@ -255,7 +255,7 @@ header figcaption .explore svg{
     stroke: white;
     stroke-width: 3;
     stroke-dasharray: 440;
-    stroke-dashoffset: calc(440 - (440 * 0) / 100);
+    stroke-dashoffset: 440;
     animation-name: loading;
     animation-duration: 5s;
     animation-iteration-count: 1;
@@ -285,157 +285,10 @@ header figure:nth-child(5) .loader svg circle:nth-child(2){
 
 @keyframes loading {
     0%{
-        stroke-dashoffset: calc(440 - (440 * 0) / 100);
-    }
-    2%{
-        stroke-dashoffset: calc(440 - (440 * 1.5) / 100);
-    }
-    4%{
-        stroke-dashoffset: calc(440 - (440 * 3.0) / 100);
-    }
-    6%{
-        stroke-dashoffset: calc(440 - (440 * 4.5) / 100);
-    }
-    8%{
-        stroke-dashoffset: calc(440 - (440 * 6.0) / 100);
-    }
-    10%{
-        stroke-dashoffset: calc(440 - (440 * 7.5) / 100);
-    }
-    12%{
-        stroke-dashoffset: calc(440 - (440 * 9.0) / 100);
-    }
-    14%{
-        stroke-dashoffset: calc(440 - (440 * 10.5) / 100);
-    }
-    16%{
-        stroke-dashoffset: calc(440 - (440 * 12.0) / 100);
-    }
-    18%{
-        stroke-dashoffset: calc(440 - (440 * 13.5) / 100);
-    }
-    20%{
-        stroke-dashoffset: calc(440 - (440 * 15.0) / 100);
-    }
-    22%{
-        stroke-dashoffset: calc(440 - (440 * 16.5) / 100);
-    }
-    24%{
-        stroke-dashoffset: calc(440 - (440 * 18.0) / 100);
-    }
-    26%{
-        stroke-dashoffset: calc(440 - (440 * 19.5) / 100);
-    }
-    28%{
-        stroke-dashoffset: calc(440 - (440 * 21.0) / 100);
-    }
-    30%{
-        stroke-dashoffset: calc(440 - (440 * 22.5) / 100);
-    }
-    32%{
-        stroke-dashoffset: calc(440 - (440 * 24.0) / 100);
-    }
-    34%{
-        stroke-dashoffset: calc(440 - (440 * 25.5) / 100);
-    }
-    36%{
-        stroke-dashoffset: calc(440 - (440 * 27.0) / 100);
-    }
-    38%{
-        stroke-dashoffset: calc(440 - (440 * 28.5) / 100);
-    }
-    40%{
-        stroke-dashoffset: calc(440 - (440 * 30.0) / 100);
-    }
-    42%{
-        stroke-dashoffset: calc(440 - (440 * 31.5) / 100);
-    }
-    44%{
-        stroke-dashoffset: calc(440 - (440 * 33.0) / 100);
-    }
-    46%{
-        stroke-dashoffset: calc(440 - (440 * 34.5) / 100);
-    }
-    48%{
-        stroke-dashoffset: calc(440 - (440 * 36.0) / 100);
-    }
-    50%{
-        stroke-dashoffset: calc(440 - (440 * 37.5) / 100);
-    }
-    52%{
-        stroke-dashoffset: calc(440 - (440 * 39.0) / 100);
-    }
-    54%{
-        stroke-dashoffset: calc(440 - (440 * 40.5) / 100);
-    }
-    56%{
-        stroke-dashoffset: calc(440 - (440 * 42.0) / 100);
-    }
-    58%{
-        stroke-dashoffset: calc(440 - (440 * 43.5) / 100);
-    }
-    60%{
-        stroke-dashoffset: calc(440 - (440 * 45.0) / 100);
-    }
-    62%{
-        stroke-dashoffset: calc(440 - (440 * 46.5) / 100);
-    }
-    64%{
-        stroke-dashoffset: calc(440 - (440 * 48.0) / 100);
-    }
-    66%{
-        stroke-dashoffset: calc(440 - (440 * 49.5) / 100);
-    }
-    68%{
-        stroke-dashoffset: calc(440 - (440 * 51.0) / 100);
-    }
-    70%{
-        stroke-dashoffset: calc(440 - (440 * 52.5) / 100);
-    }
-    72%{
-        stroke-dashoffset: calc(440 - (440 * 54.0) / 100);
-    }
-    74%{
-        stroke-dashoffset: calc(440 - (440 * 55.5) / 100);
-    }
-    76%{
-        stroke-dashoffset: calc(440 - (440 * 57.0) / 100);
-    }
-    78%{
-        stroke-dashoffset: calc(440 - (440 * 58.5) / 100);
-    }
-    80%{
-        stroke-dashoffset: calc(440 - (440 * 60.0) / 100);
-    }
-    82%{
-        stroke-dashoffset: calc(440 - (440 * 61.5) / 100);
-    }
-    84%{
-        stroke-dashoffset: calc(440 - (440 * 63.0) / 100);
-    }
-    86%{
-        stroke-dashoffset: calc(440 - (440 * 64.5) / 100);
-    }
-    88%{
-        stroke-dashoffset: calc(440 - (440 * 66.0) / 100);
-    }
-    90%{
-        stroke-dashoffset: calc(440 - (440 * 67.5) / 100);
-    }
-    92%{
-        stroke-dashoffset: calc(440 - (440 * 69.0) / 100);
-    }
-    94%{
-        stroke-dashoffset: calc(440 - (440 * 70.5) / 100);
-    }
-    96%{
-        stroke-dashoffset: calc(440 - (440 * 72.0) / 100);
-    }
-    98%{
-        stroke-dashoffset: calc(440 - (440 * 73.5) / 100);
+        stroke-dashoffset: 440;
     }
     100%{
-        stroke-dashoffset: calc(440 - (440 * 75.0) / 100);
+        stroke-dashoffset: 0;
     }
 }
 
